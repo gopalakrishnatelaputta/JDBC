@@ -19,6 +19,7 @@ public class DatabaseMetaData
 			System.out.println(dbmd.getURL());
 			System.out.println(dbmd.getUserName());
 			System.out.println(dbmd.getProcedureTerm());
+			con.close();
 			
 			
 		} catch (SQLException e) {
