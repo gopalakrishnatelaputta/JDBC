@@ -18,6 +18,7 @@ public class Creating_table
 					" PRIMARY KEY ( id ))";
 			stmt.executeQuery(sql);
 			System.out.println("Table created in the database.....");
+			con.close();
 		} catch (Exception e) {
 			
 			e.printStackTrace();
