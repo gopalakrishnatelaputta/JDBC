@@ -18,7 +18,7 @@ public class Collable_StatementUpdate
 			cs.executeUpdate();
 			
 			System.out.println("record updated....successfully");
-			
+		        con.close();
 			
 			
 		} catch (SQLException e) {
