@@ -9,6 +9,7 @@ public class Connecting_Jdbc {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL", "c##batch4pm", "system");
 			System.out.println("Successfully connected to database");
+			con.close();
 		} catch (Exception e) {
 			
 			e.printStackTrace();
