@@ -36,7 +36,9 @@ public class Resultset_MetaData
 				System.out.print(rs.getString(3)+"\t");
 				System.out.println();
 			}
-		} catch (SQLException e) {
+			con.close();
+		}
+		catch (SQLException e) {
 			
 			e.printStackTrace();
 		}
