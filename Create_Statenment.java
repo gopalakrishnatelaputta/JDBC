@@ -16,6 +16,7 @@ public class Create_Statenment
 			String sql2="insert into registration values(103,'Gopi','t',26)";
 			stmt.execute(sql2);
 			System.out.println("one record inserted......");
+			con.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
