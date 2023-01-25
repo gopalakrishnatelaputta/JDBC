@@ -22,6 +22,7 @@ public class Collable_statement
 			cs.execute();
 			System.out.println("success");
 			//System.out.println(cs.getString(2));
+			con.close();
 		}
 		catch(Exception e)
 		{
